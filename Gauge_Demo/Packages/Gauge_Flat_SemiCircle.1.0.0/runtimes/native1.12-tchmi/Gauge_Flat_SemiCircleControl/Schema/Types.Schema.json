@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.Gauge_Flat_SemiCircle.Gauge_Flat_SemiCircleControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "Gauge_Flat_SemiCircleControl",
+      "frameworkControlNamespace": "TcHmi.Controls.Gauge_Flat_SemiCircle"
+    }
+  }
+}

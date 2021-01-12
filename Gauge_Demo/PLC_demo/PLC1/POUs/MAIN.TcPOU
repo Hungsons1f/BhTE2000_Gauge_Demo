@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="MAIN" Id="{42ab776f-51ff-4ebf-a4d6-14e5307c849f}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Timer: ton;
+	val: USINT := 0;
+	nvar: usint := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Timer(in:= NOT Timer.Q, pt:= T#0.5S);
+
+IF (timer.Q) THEN
+	val := val + 20;
+	IF (val>100) THEN
+		val := 0;
+	END_IF
+END_IF
+
+nvar:=100-val;
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="8" Count="6" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="18" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,10 @@
+{
+    "CERTIFICATEEXPIRATION": "P365D",
+    "REQUIREAUTH": 2,
+    "VIRTUALDIRECTORIES": {
+        "/": "www",
+        "/Libraries/Controls/Custom/Bar_Flat": "www\\.hmipkgs\\c25d28fb-e1ef-4537-89c5-e06a44b015b3\\Content",
+        "/Libraries/Controls/Custom/Gauge_Circle": "www\\.hmipkgs\\1c9e0730-ce22-4d57-9327-56ef41d939be\\Content",
+        "/Libraries/Controls/Custom/Gauge_Flat": "www\\.hmipkgs\\e1f06801-30b3-4793-a845-902604b29b66\\Content"
+    }
+}

@@ -1,0 +1,55 @@
+<Gauge_Flat>
+/*
+** @Description: Semicircle gauge
+** @Uses: 
+**	* Colors: 
+**		* FillColorNormal: The color of the gauge in normal condition
+**		* FillColorWarning: The color of the gauge when warning
+**		* FillColorAlarm: The color of the gauge when alarm
+**	* Configuration:
+**		* Title: The title of the gauge
+**		* ShowTitle: Show or hide the title
+**		* ShowPercent: Show or hide the percentage
+**		* Data: The value to be displayed on the gauge, unit: %
+**		* WarningValue: The value changes the gauge to warning state
+**		* AlarmValue: The value changes the gauge to alarm state 
+*/
+
+/*
+** @Files: Description.json
+** @Log:
+**	* Add dependencyFiles: "css.ctrlstyle.css"
+**	* Add attributes: "data-tchmi-control-title: string", "data-tchmi-control-show-title: boolean", "data-tchmi-control-show-percent: boolean", "data-tchmi-control-data: number", "data-tchmi-control-warningval: number", "data-tchmi-control-alarmval: number", "data-tchmi-control-gauge-fill-color-nm: color", "data-tchmi-control-gauge-fill-color-wn: color", "data-tchmi-control-gauge-fill-color-al"
+**	* Add attributeCategories: "Configuration"
+*/
+
+/*
+** @Files: Template.html
+** @Log:
+**	* Add element:  "cydeus-gauge", <div class="cydeus-gauge-body">, <div class="cydeus-gauge-fill">, <div class="cydeus-gauge-cover">, <div class="cydeus-gauge-title">
+*/
+
+/*
+** @Files: css/ctrlstyle.css
+** @Description: css for all the html elements.
+** @Log: 
+**	* font-face: comic.ttf
+**	* .cydeus-gauge-body: a semicircle
+**	* .cydeus-gauge-fill: a rectangle that can rotate and overlap the body
+**	* .cydeus-gauge-cover: a semicircle smaller than the body. It is used to overlap the fill and hold the title and percentage
+**	* .cydeus-gauge-title: the title of the gauge
+*/
+
+/*
+** @Files: Source.js
+** @Log: 
+**	* Add methods to change the text in .cydeus-gauge-title
+**	* Add methods to change the visibility of .cydeus-gauge-title
+**  	* Add methods to change the visibility of the percentage which is part of .cydeus-gauge-cover
+**	* Add methods to change the percentage, which affect the rotation of .cydeus-gauge-fill
+**	* Add methods to change Warning value, which changes .cydeus-gauge-fill to Warning color
+**	* Add methods to change Alarm value, which changes .cydeus-gauge-fill to Alarm color
+**	* Add methods to change the color of .cydeus-gauge-fill in normal condition
+**	* Add methods to change the color of .cydeus-gauge-fill in warning situation
+**	* Add methods to change the color of .cydeus-gauge-fill in alarm situation
+*/

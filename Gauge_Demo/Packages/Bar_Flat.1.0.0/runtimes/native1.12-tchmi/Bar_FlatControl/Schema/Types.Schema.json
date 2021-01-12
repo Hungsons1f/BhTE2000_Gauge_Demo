@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.Bar_Flat.Bar_FlatControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "Bar_FlatControl",
+      "frameworkControlNamespace": "TcHmi.Controls.Bar_Flat"
+    }
+  }
+}

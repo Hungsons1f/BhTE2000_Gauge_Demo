@@ -1,0 +1,29 @@
+<Bar_Flat>
+/*
+** @Description: Bar gauge
+** @Description: Inherit from Gauge_Flat 
+** @Uses: 
+**	* Colors: 
+**		* FillColorNormal: The color of the gauge in normal condition
+**		* FillColorWarning: The color of the gauge when warning
+**		* FillColorAlarm: The color of the gauge when alarm
+**	* Configuration:
+**		* Title: The title of the gauge
+**		* ShowTitle: Show or hide the title
+**		* ShowPercent: Show or hide the percentage
+**		* Data: The value to be displayed on the gauge, unit: %
+**		* WarningValue: The value changes the gauge to warning state
+**		* AlarmValue: The value changes the gauge to alarm state 
+*/
+
+/*
+** @Files: css/ctrlstyle.css
+** @Description: css for all the html elements.
+** @Log: 
+**	* font-face: comic.ttf
+**	* .cydeus-gauge-body: a bar
+**	* .cydeus-gauge-fill: a rectangle that can translate and overlap the body
+**	* .cydeus-gauge-cover: a container to hold title and percentage
+**	* .cydeus-gauge-title: the title of the gauge
+**	* .cydeus-gauge-percent: the percentage of data
+*/

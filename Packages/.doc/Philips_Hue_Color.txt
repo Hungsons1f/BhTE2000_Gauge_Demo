@@ -1,0 +1,14 @@
+<Philips_Hue_Color>
+/*
+** @Description: Philips Hue Manual Control
+** @Properties: 
+**	* Common: 
+**		* ShowAdvanced: Show advanced functions of this control, including some HTTP methods like GET, PUT, POST, DELETE
+** @Uses: 
+**	* Step 1: Fill in the URL textbox with the correct URL (if you want to change color, then fill in http://<Bridge's IP address>/api/<user name>/lights/<light id>/state)
+**	* Step 2: Click ENABLE to allow data exchange between your device and the bridge
+**	* Step 3: Choose your desire color in the color disc
+** @Notes:
+**	* After clicking ENABLE, you can change the color and the light adopts it intermediately
+**	* When reclicking ENABLE, the light stops receiving your commands and waits until ENABLE is clicked again
+*/

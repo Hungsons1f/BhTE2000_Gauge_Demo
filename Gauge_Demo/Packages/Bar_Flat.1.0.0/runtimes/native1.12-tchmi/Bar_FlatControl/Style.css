@@ -1,0 +1,91 @@
+﻿/* General theme independed control css. */
+
+@font-face {
+    font-family: comic;
+    src: url('Fonts/comic.ttf') format('truetype');
+}
+
+.TcHmi_Controls_Bar_Flat_Bar_FlatControl {
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Bar_Flat_Bar_FlatControl-Template {
+    width: 100%;
+    height: 100%;
+}
+
+.cydeus-bar-gauge {
+    /*text*/
+    font-family: comic;
+    font-weight: bold;
+    color: #058686;
+    font-size: 200%;
+    position: relative;
+}
+
+.cydeus-bar-gauge-body {
+    width: 100%;
+    height: 30%;
+    max-height: 50px;
+    border-top-left-radius: 5% 30%;
+    border-top-right-radius: 5% 30%;
+    border-bottom-left-radius: 5% 30%;
+    border-bottom-right-radius: 5% 30%;
+    background: #bfbfbf;
+    position: relative;
+    overflow: hidden;
+}
+
+.cydeus-bar-gauge-fill {
+    width: 100%;
+    height: 0;
+    right: 100%;
+    padding-bottom: 20%;
+    background: #00ffff;
+    position: absolute;
+    /*transform: rotate(0.25turn);*/
+    transition: transform 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.cydeus-bar-gauge-cover {
+    width: 100%;
+    height: 40%;
+    background: none /*#ffffff*/;
+    /*text*/
+    font-size: 250%;
+}
+
+.cydeus-bar-gauge-title {
+    background: none;
+    float: left;
+    padding-top: 25px;
+    /*Text*/
+    font-size: 40%;
+    color: #058686;
+}
+
+.cydeus-bar-gauge-percent {
+    display: block;
+    text-align: right;
+    color: #058686;
+}
+
+
+/* If the main use for this control is interaction
+    uncomment the following lines to give user feedback:
+    This overlays the whole control with a white color
+    and change the mouse cursor */
+
+/*
+.TcHmi_Controls_$default_namespace$_Bar_Flat.TcHmi_Controls_System_TcHmiControl-operate-disallowed::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}
+*/

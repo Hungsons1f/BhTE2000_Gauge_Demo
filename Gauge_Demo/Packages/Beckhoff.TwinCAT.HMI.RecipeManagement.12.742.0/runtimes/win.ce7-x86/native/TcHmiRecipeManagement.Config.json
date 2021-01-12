@@ -1,0 +1,139 @@
+{
+  "$schema": "../TcHmiSrv/schema/ExtensionSettings.Schema.json",
+  "version": "1.12.742.0",
+  "configVersion": "1.0.0.12",
+  "guid": "202AA035-2258-492E-965D-DE1EA9D12D59",
+  "symbols": {
+    "ActivateRecipe": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "doc": "Write all symbols of the given recipe.",
+      "sample": {
+        "doc": "List the whole path to the recipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "ReadFromTarget": {
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {}
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "doc": "Read all symbols of the given recipe",
+      "sample": {
+        "doc": "List the whole path to the recipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "UpdateRecipe": {
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "doc": "After changing a recipeType updateRecipe is used to update values of all recipes based on this recipeType",
+      "sample": {
+        "doc": "Updates recipe values from recipe testfolder::testRecipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "GetRecipes": {
+      "readValue": {
+        "function": true,
+        "type": "array",
+        "items": {
+          "recipes": {
+            "type": "string"
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "recipeTypePath": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "recipeTypePath"
+        ]
+      },
+      "doc": "Returns all recipes based on a recipetype",
+      "sample": {
+        "doc": "Get all recipes based on testfolder::testRecipeType",
+        "value": {
+          "recipeTypePath": "testfolder::testRecipeType"
+        }
+      }
+    },
+    "GetActiveRecipes": {
+      "readValue": {
+        "function": true,
+        "type": "array",
+        "items": {
+          "recipe": {
+            "type": "string"
+          }
+        }
+      },
+      "doc": "Returns all active recipes.",
+      "sample": {
+        "doc": "Returns all active recipes."
+      }
+    }
+  },
+  "productVersion": "1.12.742.0",
+  "signature": "WQSdpQWO87QvCGRMIfJxy/VDFGzltO+z5hYVSt43f8bxKyAeIC2eT3CU+17QiG4OPaknOsTHWo/blP2SHF7IysOfFwzu5QX5gQicYCOAuvTVAYxphDu0qV2zxyAAzkjjaoi0om5rQBHK1xMhtsolgXbvIlXhPnddkqUNIcfDeiJDiJy/xWpsPg3Ey1WQJ/yZqxR386pjONUhemsD5za0BWgKqjM/OcD/f8UWWQWnlp42+xebGyqS+P6nakrw+p4x9cFQI//gu3yViUYFMG7dAy8BLQSAusx5RoE7m700CP72vQqy+TuPX8vCdOiuC8bnx1TcCZxWxdFinCxu71LDHg=="
+}

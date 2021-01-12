@@ -1,0 +1,246 @@
+﻿{
+  "$schema": "../.hmiframework/Schema/ControlDescription.Schema.json",
+  "apiVersion": 1,
+  "name": "Gauge_Flat_CircleControl",
+  "namespace": "TcHmi.Controls.Gauge_Flat_Circle",
+  "displayName": "Gauge_Flat_CircleControl",
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "visible": true,
+  "themeable": "Standard",
+  "base": "TcHmi.Controls.System.TcHmiControl",
+  "description": "This description text will be used as a Tooltip in Visual Studio.",
+  "properties": {
+    "containerControl": false,
+    "geometry": {
+      "width": 150,
+      "height": 150
+    }
+  },
+  "template": "Template.html",
+  "icons": [
+    {
+      "name": "Icons/16x16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "Icons/24x24.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "Icons/32x32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "Icons/64x64.png",
+      "width": 64,
+      "height": 64
+    }
+  ],
+  "dependencyFiles": [
+    {
+      "name": "Gauge_Flat_CircleControl.js",
+      "type": "JavaScript",
+      "description": "Contains all the main logic."
+    },
+    {
+      "name": "Style.css",
+      "type": "Stylesheet",
+      "description": "Theme independent style"
+    },
+    {
+      "name": "css/ctrlstyle.css",
+      "type": "Stylesheet",
+      "description": "Theme independent style"
+    }
+
+  ],
+  "themes": {
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Style.css",
+          "type": "Stylesheet",
+          "description": "Theme dependent style"
+        }
+      ]
+    }
+  },
+  "attributes": [
+    {
+      "name": "data-tchmi-control-title",
+      "displayName": "Title",
+      "propertyName": "Title",
+      "propertySetterName": "setTitle",
+      "propertyGetterName": "getTitle",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "Configuration",
+      "description": "Title of the control.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "Title",
+      "defaultValueInternal": "Title"
+    },
+    {
+      "name": "data-tchmi-control-show-title",
+      "displayName": "ShowTitle",
+      "propertyName": "ShowTitle",
+      "propertySetterName": "setShowTitle",
+      "propertyGetterName": "getShowTitle",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Boolean",
+      "category": "Configuration",
+      "description": "Show or hide the title.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": true,
+      "defaultValueInternal": true
+    },
+    {
+      "name": "data-tchmi-control-show-percent",
+      "displayName": "ShowPercent",
+      "propertyName": "ShowPercent",
+      "propertySetterName": "setShowPercent",
+      "propertyGetterName": "getShowPercent",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Boolean",
+      "category": "Configuration",
+      "description": "Show or hide the percentage.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": true,
+      "defaultValueInternal": true
+    },
+    {
+      "name": "data-tchmi-control-data",
+      "displayName": "Data",
+      "propertyName": "Data",
+      "propertySetterName": "setData",
+      "propertyGetterName": "getData",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "Configuration",
+      "description": "Data for the control to display.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "0",
+      "defaultValueInternal": "0"
+    },
+    {
+      "name": "data-tchmi-control-warningval",
+      "displayName": "WarningValue",
+      "propertyName": "WarningValue",
+      "propertySetterName": "setWarningValue",
+      "propertyGetterName": "getWarningValue",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "Configuration",
+      "description": "Warning value.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "60",
+      "defaultValueInternal": "60"
+    },
+    {
+      "name": "data-tchmi-control-alarmval",
+      "displayName": "AlarmValue",
+      "propertyName": "AlarmValue",
+      "propertySetterName": "setAlarmValue",
+      "propertyGetterName": "getAlarmValue",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "Configuration",
+      "description": "Alarm value.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "90",
+      "defaultValueInternal": "90"
+    },
+    {
+      "name": "data-tchmi-control-gauge-fill-color-nm",
+      "displayName": "FillColorNormal",
+      "propertyName": "FillColorNormal",
+      "propertySetterName": "setFillColorNormal",
+      "propertyGetterName": "getFillColorNormal",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Color",
+      "category": "Colors",
+      "description": "Color of the normal gauge fill. Default = #00ffff",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "#00ffff",
+      "defaultValueInternal": "#00ffff"
+    },
+    {
+      "name": "data-tchmi-control-gauge-fill-color-wn",
+      "displayName": "FillColorWarning",
+      "propertyName": "FillColorWarning",
+      "propertySetterName": "setFillColorWarning",
+      "propertyGetterName": "getFillColorWarning",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Color",
+      "category": "Colors",
+      "description": "Color of the gauge fill in warning. Default = #f1f218",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "#f1f218",
+      "defaultValueInternal": "#f1f218"
+    },
+    {
+      "name": "data-tchmi-control-gauge-fill-color-al",
+      "displayName": "FillColorAlarm",
+      "propertyName": "FillColorAlarm",
+      "propertySetterName": "setFillColorAlarm",
+      "propertyGetterName": "getFillColorAlarm",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Color",
+      "category": "Colors",
+      "description": "Color of the gauge fill in alarm. Default = #ff4646",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "#ff4646",
+      "defaultValueInternal": "#ff4646"
+    }
+
+  ],
+  "attributeCategories": [
+    {
+      "name": "Configuration",
+      "displayPriority": 100
+    }
+  ],
+  "functions": [],
+  "events": [],
+  "dataTypes": [
+    {
+      "schema": "Schema/Types.Schema.json"
+    }
+  ]
+}

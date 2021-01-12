@@ -1,0 +1,63 @@
+﻿@font-face {
+	font-family: comic;
+	src: url('../Fonts/comic.ttf') format('truetype');
+}
+
+.cydeus-gauge-body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #bfbfbf;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+    /*text*/
+    font-family: comic;
+    font-weight: bold;
+    color: #28b3b3;
+    font-size: 200%;
+}
+
+.cydeus-gauge-fill {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #00ffff;
+    position: absolute;
+    top: 100%;
+    transform-origin: center top;
+    /*transform: rotate(0.25turn);*/
+    transition: transform 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.cydeus-gauge-cover {
+    margin: auto;
+    width: 75%;
+    height: 150%;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 25%;
+    left: 12.5%;
+    position: absolute;
+    /*text*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+    font-size: 250%;
+}
+
+.cydeus-gauge-title {
+    width: 75%;
+    height: 150%;
+    left: 12.5%;
+    position: absolute;
+    /*Text*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+}
